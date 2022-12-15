@@ -1,0 +1,12 @@
+syntax = "proto3";
+package blog.blog;
+
+option go_package = "blog/x/blog/types";
+
+message Post {
+  uint64 id = 1;
+  string creator = 2; 
+  string title = 3; 
+  string body = 4;
+  int64 createdAt = 5;
+}
